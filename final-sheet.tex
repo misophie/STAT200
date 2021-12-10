@@ -148,7 +148,54 @@
     \end{itemize}
 \end{itemize}
 
-\section{Binomial Distribution}
+\section{Probability and Random Variables}
+
+\textbf{The Binomial Model}
+\begin{itemize}
+    \item Used for discrete random variables
+    \item The Binomial Experiment:
+    \begin{itemize}
+        \item Experiment must consist of \emph{n} identical trials (number of trials is fixed in advance)
+        \item Outcomes of each trial are either success or failure
+        \item Probability of success \emph{p} is constant
+        \item Probability of failure is \emph{q} = 1 - \emph{p}
+        \item The trials are independent
+        \item The random varialbe \emph{X} represents the number of successes out of \emph{n} trials 
+    \end{itemize}
+\end{itemize}
+
+\noindent
+\textbf{Algorithm for the Probability of Binomials}
+\begin{itemize}
+    \item Identify the parameters: \\
+    \emph{n} - number of trials \\
+    \emph{p} - probability of success
+    \item Construct the binomial model: \begin{math}
+        X \sim Bin(n , p)    
+    \end{math}
+    \item Calculate the probability: \\
+    Where the probability that X will take on value \emph{x} is given by:\\
+    \begin{math} 
+        P(X = x) = (_{n}C_{x})p^x * (1-\emph{p})^{n-x}, x = 0, 1, 2, ..., n     
+    \end{math} \\
+    Where: \begin{math}
+        (_{n}C_{x}) = \frac{n!}{x!(n-x)!}
+    \end{math}
+\end{itemize}
+
+\noindent
+\textbf{Mean, Varaince and Standard Deviation for a Binomial Random Variable}
+\begin{itemize}
+    \item Mean: \emph{np} \\
+    Interp. average number of successes if you were to repeat experiment many times
+    \item Variance: \emph{np}(1 - \emph{p}) \\
+    Interp. measure of variablility of numbers of successes you were to repeat experiment many times
+    \item Standard deviation: \begin{math}
+        \sqrt{np(1-p)}
+    \end{math}
+    
+\end{itemize}
+
 
 \section{Correlation and Association}
 
@@ -333,6 +380,49 @@
         \item Subject's response is influenced by how the question was phrased or asked, or due to misunderstanding of a question, or unwillingness to disclose the truth 
     \end{itemize}
 \end{itemize}
+
+\section{Sampling Distribution Models}
+
+\textbf{Basic Information}
+\begin{itemize}
+    \item Population: all individuals who want to be studied 
+    \item Sample: a subset of individuals selected from a population
+    \item Parameter: a numerical summary of a population
+    \item Statistic: a numerical summary of the sample
+\end{itemize}
+
+\textbf{Sampling Distribution of Proportions}
+\begin{itemize}
+    \item The sample proportion (a) statistic) is given by: \\
+    \begin{math}\hat{p} = \frac{\textrm{number of individuals sampled who have the characteristic}}{\textrm{sample size n}}\end{math}
+    \item Value of population proportion \emph{p} is fixed, usually unknown. Therefore, sample proportion \begin{math}\hat{p}\end{math} used to estimate
+    \item Sampling distribution of \begin{math}\hat{p}\end{math}: \\
+    \begin{itemize}
+        \item mean \begin{math}\mu(\hat p)\end{math}: mean of \begin{math}\hat{p}\end{math} = mean of \emph{p}\\
+        \item standard deviation \begin{math}\sigma(\hat p)\end{math}: \begin{math}
+        \sqrt{\frac{p(1-p)}{n}}
+        \end{math}
+        \item Sampling distribution of \begin{math}\hat p\end{math} approximately normal when:
+        \begin{itemize}
+            \item Sample is random
+            \item Individual values are independent (sample size \begin{math}\le\end{math} 10\% of population)
+            \item sample size is large (\begin{math} np \ge 10 \textrm{ and } n(1-p) \ge 10 \end{math}) 
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+\textbf{Samplng Distribution of Means}
+\begin{itemize}
+    \item The sample mean (a statistic) is given by: \\
+    \begin{math}\bar{y} = \frac{y_1 + y_2 +...+y_n}{n}\end{math}
+    \item Population mean \begin{math}\mu\end{math} is a parameter, fixed and usually unknown
+    \item Sampling distribution of means:
+    \begin{itemize}
+        \item mean \begin{math}\mu(\bar y)\end{math} = \begin{math}\mu\end{math}
+        \item standard deviaton \begin{math}\sigma(\bar y) = \frac{\sigma}{\sqrt{n}}\end{math}
+    \end{itemize}
+\end{itemize}
+
 \section{Hypothesis Testing}
 \includegraphics[scale = 0.5]{dec-tree.png}
 \subsection{One sample z-test}

@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1639105639 "c:/Users/ericn/OneDrive/School Stuff/Post Secondary/Year 2/Semester 1/Stat 200/Finals Sheet/STAT200/final-sheet.tex" "final-sheet.pdf" "final-sheet" 1639105641
-  "C:/Users/ericn/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1639105485 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+["pdflatex"] 1639167301 "c:/Users/ericn/OneDrive/School Stuff/Post Secondary/Year 2/Semester 1/Stat 200/Finals Sheet/STAT200/final-sheet.tex" "final-sheet.pdf" "final-sheet" 1639167302
+  "C:/Users/ericn/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1639160846 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/ericn/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1639105494 11548 1f7c0f9d1ffe6282f62d54c792bf0684 ""
-  "C:/Users/ericn/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1639105461 9769967 0b11fc147466d39530d9f37595891768 ""
+  "C:/Users/ericn/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1639160916 9769968 cda90169268e0043b6fd52f881b608d7 ""
   "C:/Users/ericn/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/tcrm1000.tfm" 993058908 1436 c7f957a372ef2fbe93c0982f96625e12 ""
   "C:/Users/ericn/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx10.tfm" 1136765053 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "C:/Users/ericn/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx12.tfm" 1136765053 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -55,10 +55,10 @@
   "C:/Users/ericn/AppData/Local/Programs/MiKTeX/tex/latex/graphics/trig.sty" 1636824463 4009 187ea2dc3194cd5a76cd99a8d7a6c4d0 ""
   "C:/Users/ericn/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1634573416 29971 6c47712bf4bc87d15b2ca318615f75a3 ""
   "C:/Users/ericn/AppData/Local/Programs/MiKTeX/tex/latex/sectsty/sectsty.sty" 1469025625 23038 d476012cd03f82f9475ad54ba6cd3267 ""
-  "c:/Users/ericn/OneDrive/School Stuff/Post Secondary/Year 2/Semester 1/Stat 200/Finals Sheet/STAT200/final-sheet.tex" 1639105634 16134 2b61774a9e61598c20e281f5a1437d97 ""
+  "c:/Users/ericn/OneDrive/School Stuff/Post Secondary/Year 2/Semester 1/Stat 200/Finals Sheet/STAT200/final-sheet.tex" 1639167299 19990 bfabc2ffa881526310378a4815b71aef ""
   "dec-tree.png" 1639105083 41683 4422553f87bbb92bb23107b27ade428c ""
-  "final-sheet.aux" 1639105640 1774 0c3ddb4c511966c4d0c2431216ab35d3 "pdflatex"
-  "final-sheet.tex" 1639105634 16134 2b61774a9e61598c20e281f5a1437d97 ""
+  "final-sheet.aux" 1639167302 1901 335c83c85426575a92669add8b1ebfdc "pdflatex"
+  "final-sheet.tex" 1639167299 19990 bfabc2ffa881526310378a4815b71aef ""
   (generated)
   "final-sheet.aux"
   "final-sheet.log"
