@@ -375,11 +375,12 @@
 \begin{itemize}
 \item Idenitify parameter of interest. Find the null and alternative hypotheseses.\\
       s - The standard deviation of the sample.\\
-      n - The sample size.\\
-      $\mu$ - Hypothethised population mean.\\
-      $\mathbf{SD}(\bar{y_1}-\bar{y_2}) = \sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}$ - Standard error of the statistic.
+      $n_1$ - The sample size of the first sample.\\
+      $n_2$ - The sample size of the second sample.\\
+      $\Delta_0$ - Hypothethised mean of difference between two populations.\\
+      $\mathbf{SD}(\bar{y_1}-\bar{y_2}) = \sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}$ - Standard error of the statistic.\\
+      $df = \mathbf{min}(n_1 - 1, n_2 -1)$
 \item Construct the null-model: $\mathbf{N}(\mu,\frac{s}{\sqrt{n}})$
-\item Find the test-statistic(t): $\mathbf{Z} = \frac{x-p_0}{\mathbf{SE}(\bar{y})}$
 \item Using R compute the p-value:
 \begin{itemize}
     \item One-sided hypothesis : pnorm(t)
@@ -389,6 +390,22 @@
     Otherwise, you fail to reject the null-hypothesis.
 \end{itemize}
 \subsection{Matched pair}
+\textbf{Algorithm}
+\begin{itemize}
+\item Idenitify parameter of interest. Find the null and alternative hypotheseses.\\
+    $\Delta_0$ - Hypothethised population mean difference (usually 0)\\
+    $\bar{d}$ - The mean of the differences.\\
+    $s_d = \sqrt{\frac{\sum_{i = 1}^{n}(d_i - \bar{d})}{n-1}}$ = The standard deviation of the sample differences.\\
+    n - The sample size.
+\item Find the test-statistic(t): $t = \frac{\bar{d}-\Delta_0}{\frac{s_d}{\sqrt{n}}}$
+\item Using R compute find the p-value using pt function:
+\begin{itemize}
+    \item For one sided tests use: pt(t, n-1)
+    \item For two sided tests use: 2 $\cdot$ pt(t, n-1)
+\end{itemize}
+\item If the p-value is less than $\alpha$ - reject the null-hypothesis. 
+    Otherwise, you fail to reject the null-hypothesis.
+\end{itemize}
 \subsection{One sample t-test}
 \subsection{ANOVA}
 
